@@ -7,15 +7,25 @@
   <style type="text/css">
     html { height: 100% }
     body { height: 100%; margin: 0; padding: 0 }
-    #map_canvas { height: 100% }
-    #select_route {width:20%;height:200px;}
+    #map_canvas {
+      display: inline-block;
+      width: 70%;
+      height: 90%;
+    }
+    #route_container {
+      display: inline-block;
+      width: 30%;
+      margin-left: .5em;
+      vertical-align: top;
+    }
+    /*#select_route {width:20%;height:200px;}*/
   </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
   <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAeEUgL2Dz-lovWiAuPE8PYIuq777ZT6Dg" type="text/javascript"></script>
-  <script type="text/javascript" src="../model/render.js" ></script>
+  <script type="text/javascript" src="render.js" ></script>
 
   <!-- favicon  -->
   <link rel="apple-touch-icon" sizes="57x57" href="/favic/apple-icon-57x57.png">
@@ -42,7 +52,7 @@
   <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">BART</a>
+        <a class="navbar-brand" href="#">Display BART Route and Station Info</a>
       </div>
     </div><!-- /.container-fluid -->
 </nav>

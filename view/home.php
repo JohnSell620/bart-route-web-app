@@ -4,9 +4,8 @@
 ?>
 
 
-<div class="col-md-8" id="map_canvas" style="height:80%"></div>
-<br/><br/>
-<div class="col-md-4">
+<div class="col-md-8" id="map_canvas"></div>
+<div class="col-md-4" id="route_container">
   <div class="panel panel-primary">
     <div class="panel-heading">
       <h3 class="panel-title">SELECT ROUTE</h3>
